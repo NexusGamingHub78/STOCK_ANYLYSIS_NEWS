@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stock Analyser - Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div style="display:flex; align-items:center; gap:10px;"><img src="assets/logo.svg" alt="Logo"><span>Stock Analyser</span></div>
+<button onclick="toggleTheme()">Theme</button>
+</header>
+<nav>
+<a href="index.html">Dashboard</a>
+<a href="chart.html">Charts</a>
+<a href="watchlist.html">Watchlist</a>
+<a href="news.html">News</a>
+<a href="settings.html">Settings</a>
+</nav>
+<div class="card"><div class="big">NIFTY 50: <span id="niftyPrice">Loading...</span></div><div class="big">BANKNIFTY: <span id="bankniftyPrice">Loading...</span></div></div>
+<div class="card"><h3>Top Gainers</h3><div id="gainers">Loading...</div></div>
+<div class="card"><h3>Top Losers</h3><div id="losers">Loading...</div></div>
+<footer>© 2025 Stock Analyser. All rights reserved.</footer>
+<script src="script.js"></script>
+</body>
+</html>
