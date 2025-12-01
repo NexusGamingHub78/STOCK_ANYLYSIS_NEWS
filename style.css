@@ -1,0 +1,105 @@
+/* ---------- GENERAL ---------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  color: #111;
+  transition: 0.4s ease;
+}
+
+.dark {
+  background: #0e0e0e;
+  color: #fff;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  padding: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(45deg,#007bff,#00c6ff);
+  color: white;
+  letter-spacing: 1px;
+  animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-70px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ---------- DARK MODE BUTTON ---------- */
+#themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #222;
+  border: none;
+  padding: 10px 16px;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dark #themeToggle {
+  background: #fff;
+  color: #000;
+}
+
+/* ---------- CARD STYLE ---------- */
+.card {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 0.7s ease;
+}
+
+.dark .card {
+  background: #1b1b1b;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- TITLE ---------- */
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ---------- SEARCH BAR ---------- */
+#searchBar {
+  width: 90%;
+  display: block;
+  margin: 15px auto;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  font-size: 16px;
+}
+
+/* ---------- STOCK LIST ---------- */
+.stock {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+/* green and red */
+.green { color: #00b347; font-weight: bold; }
+.red { color: #ff3d3d; font-weight: bold; }
+
+.big {
+  font-size: 28px; 
+  font-weight: bold;
+}
